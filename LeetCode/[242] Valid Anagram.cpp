@@ -1,6 +1,6 @@
 /*
  * [242] Valid Anagram
- *
+ * 另一种更快的方法是定义一个数组大小为26，以s t的每个字符值-‘a'为索引，对其进行++ -- 操作 若数组中每一个值都为了则true fanz
  * https://leetcode.com/problems/valid-anagram/description/
  *
  * algorithms

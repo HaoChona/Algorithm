@@ -67,3 +67,31 @@ public:
 		return pre;
 	}
 };
+/*
+//method two
+class Solution {
+public:
+    bool isPalindrome(ListNode* A) {
+		stack<int> s;
+		ListNode* temp;
+		temp=A;
+		while(temp!=NULL)
+		{
+			s.push(temp->val);
+			temp=temp->next;
+		}
+
+		while(A!=NULL)
+		{
+			if(s.top()!=A->val)
+			{
+				return false;
+				break;
+			}
+			else
+				s.pop();
+			A=A->next;
+		}
+		return true;
+}
+*/

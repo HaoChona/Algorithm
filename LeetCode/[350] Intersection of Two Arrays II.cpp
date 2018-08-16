@@ -1,6 +1,7 @@
 /*
  * [350] Intersection of Two Arrays II
- *
+ * 解题思路：与归并排序一样，先对两个向量排序，之后若nums1[i] > nums2[j] 则j++；若nums1[i] < nums2[j]，则i++；
+ * 若nums1[i] == nums2[j]，则添加nums[i]到ret中之后i++，j++；
  * https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
  *
  * algorithms

@@ -1,6 +1,7 @@
 /*
  * [36] Valid Sudoku
- *
+ * 解题思路：
+ * 定义一个一维数组，index为表示board的数字，值为该数字出现的次数，然后每行每列的判断，如果不满足直接return。之后检查每一个子矩阵。
  * https://leetcode.com/problems/valid-sudoku/description/
  *
  * algorithms
@@ -149,3 +150,22 @@ public:
         return true;
     }
 };
+
+
+/*
+//method Two
+class Solution {
+public:
+    bool isValidSudoku(vector<vector<char>>& board) {
+        map<char,int> row[9],col[9],blk[9];
+        char c;
+        for(int i = 0;i<9;i++){
+            for(int j =0;j<9;j++){
+                c = board[i][j];
+                if((c!='.')&&(0<row[i][c]++ || 0<col[j][c]++ || 0<blk[i/3*3+j/3][c]++)) return false;
+            }
+        }
+        return true;
+    }
+};
+*/

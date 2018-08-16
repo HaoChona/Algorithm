@@ -1,6 +1,20 @@
 /*
  * [8] String to Integer (atoi)
+ * 此题的坑点在于 对于“+-8” 和 “       0000008884000”这样的字符串；
  *
+ * 解题思路：
+ *
+ * 首先去处字符串首部的‘ ’ 空格字符
+ *
+ * 然后判断首字符是否为正负符号或者是数字符号 若不是则 return 0 反之继续执行
+ *
+ * 之后就是对‘+-8’这样的字符进行判断了 如果是 return 0 反之继续执行
+ *
+ * 记录数字是正数还是负数
+ *
+ * 去首部0操作
+ *
+ * rangh
  * https://leetcode.com/problems/string-to-integer-atoi/description/
  *
  * algorithms

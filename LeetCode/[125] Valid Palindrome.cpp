@@ -89,3 +89,40 @@ public:
 
     }
 };
+/*
+ //method tow
+class Solution {
+public:
+    bool isalpha(char ch)
+    {
+        return (('0'<=ch&&ch<='9')||('a'<=ch&&ch<='z')||('A'<=ch&&ch<='Z')) ? true : false;
+    }
+    bool isequal(char lch, char rch)
+    {
+        if('A'<=lch&&lch<='Z')
+            lch=lch+32;
+        if('A'<=rch&&rch<='Z')
+            rch=rch+32;
+        
+        return (lch==rch) ? true : false;
+    }
+    bool isPalindrome(string s) {
+        if(s.empty())
+            return true;
+        int l=0,r=s.length()-1;
+        while(l<=r)
+        {
+            while(l<r&& !isalpha(s[l]))
+                l++;
+            while(l<r&& !isalpha(s[r]))
+                r--;
+            if(!isequal(s[l],s[r]))
+                return false;
+            
+            l++;
+            r--;
+        }
+        return true;
+    }
+};
+*/
